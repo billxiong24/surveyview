@@ -7,7 +7,7 @@ import android.graphics.Typeface;
 import android.support.constraint.ConstraintLayout;
 import android.util.Log;
 import android.view.Gravity;
-import android.view.LayoutInflater;x    
+import android.view.LayoutInflater;x
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
