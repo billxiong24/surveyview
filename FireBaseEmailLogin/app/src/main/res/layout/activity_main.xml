@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shreyasingh.firebaseemaillogin.MainActivity">
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="78dp"
+        android:ems="10"
+        android:hint="Enter email "
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="81dp"
+        android:layout_alignBottom="@+id/passwordEditText"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/emailEditText"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Enter password"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/createUserBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:text="CREATE" />
+
+    <Button
+        android:id="@+id/moveToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/createUserBut"
+        android:layout_below="@+id/createUserBut"
+        android:layout_marginTop="23dp"
+        android:text="LOGIN" />
+</RelativeLayout>

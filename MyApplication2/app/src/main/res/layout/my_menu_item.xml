@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ABP Menu"
+        android:paddingLeft="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="10dp"
+        android:id="@+id/menuName"
+        android:textSize="24sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/location"
+        app:layout_constraintTop_toBottomOf="@id/menuName"
+        android:layout_margin="5dp"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/edit_circle"
+        android:id="@+id/editButton"
+        />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingRight="15dp"
+        android:layout_marginTop="25dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/analyzeButton"
+        android:src="@drawable/analytics_icon"
+        app:layout_constraintTop_toBottomOf="@+id/editButton"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="89 responses"
+        android:id="@+id/responses"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="15dp"
+        android:paddingBottom="10dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/analyzeButton"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
